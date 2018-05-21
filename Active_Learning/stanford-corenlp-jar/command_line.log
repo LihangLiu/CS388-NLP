@@ -1,0 +1,14 @@
+Train File: wsj_00.conllx
+Dev File: null
+Model File: output_model
+Embedding File: /projects/nlp/penn-dependencybank/en-cw.txt
+Pre-trained Model File: null
+Exception in thread "main" edu.stanford.nlp.io.RuntimeIOException: java.io.IOException: Unable to open "wsj_00.conllx" as class path, filename or URL
+	at edu.stanford.nlp.parser.nndep.Util.loadConllFile(Util.java:183)
+	at edu.stanford.nlp.parser.nndep.DependencyParser.train(DependencyParser.java:690)
+	at edu.stanford.nlp.parser.nndep.DependencyParser.main(DependencyParser.java:1403)
+Caused by: java.io.IOException: Unable to open "wsj_00.conllx" as class path, filename or URL
+	at edu.stanford.nlp.io.IOUtils.getInputStreamFromURLOrClasspathOrFileSystem(IOUtils.java:480)
+	at edu.stanford.nlp.io.IOUtils.readerFromString(IOUtils.java:617)
+	at edu.stanford.nlp.parser.nndep.Util.loadConllFile(Util.java:142)
+	... 2 more
